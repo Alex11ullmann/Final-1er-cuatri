@@ -1,0 +1,34 @@
+/*Compras*/
+body {
+    background-color: antiquewhite;
+}
+
+.padre {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: cornsilk;
+    background-color: rgb(208, 68, 68);
+    border-color: black;
+    border-style: groove;
+    border-radius: 1%;
+    display: inline-block;
+    text-align: center;
+}
+
+.indice {
+    background-color: rgb(243, 195, 75);
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    padding: 1%;
+}
+
+.enlace {
+    background-color:darkgrey;
+    color: black;
+    border-style: solid;
+    border-color:black;
+    border-radius: 5px;
+}
