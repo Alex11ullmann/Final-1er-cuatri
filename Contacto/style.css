@@ -31,6 +31,13 @@ h1 {
     text-align: center;
 }
 
+.enlace:hover {
+    color:rgb(210, 214, 213);
+    background-color:orangered;
+    cursor: pointer;
+    font-size: 30px;
+}
+
 .enlace {
     background-color:darkgrey;
     color: black;

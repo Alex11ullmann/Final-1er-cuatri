@@ -24,10 +24,89 @@ body {
     padding: 1%;
 }
 
+.enlace:hover {
+    color:rgb(210, 214, 213);
+    background-color:orangered;
+    cursor: pointer;
+    font-size: 30px;
+}
+
 .enlace {
     background-color:darkgrey;
     color: black;
     border-style: solid;
     border-color:black;
     border-radius: 5px;
+}
+
+h2 {
+    text-align: start;
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section>div {   
+    width: 30%;
+    display: flex;  
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+section>div>img {
+    display: flex;
+    width: 40%;
+    margin: 10px;
+    border-radius: 15%;
+    
+}
+
+.botones {
+    display: flex;
+    height: auto;
+    display:inline;
+}
+input {
+    width: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 10px;
+}
+
+.resultado {
+    width: 100px;
+    height: 40px;
+    font-size: 40px;
+}
+
+footer>div>p {
+    font-size: 40px;
+}
+h3 {
+    text-align: start;
+    color: black;
+}
+
+.mediodepago {
+    height: 25px;
+    width: 30px;
+    background-color:rgb(255, 252, 252);
+    border-radius: 50%;
+    
+}
+
+ul {
+    text-align: start;
+
+}
+
+ul>p {
+    font-size: 20px;
 }

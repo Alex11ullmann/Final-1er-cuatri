@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs = require("node:fs");
 
-var nombre = document.getElementById("nombre").Value;
-var correo = document.getElementById("correo").Value;
-var telefono = document.getElementById("telefono").Value;
-var mensaje = document.getElementById("mensaje").Value;
+var nombre = document.getElementById("nombre");
+var correo = document.getElementById("correo");
+var telefono = document.getElementById("telefono");
+var mensaje = document.getElementById("mensaje");
 var telefonostring = telefono.toString();
 var datosusuario = new Array(nombre, correo, telefonostring, mensaje);
 
