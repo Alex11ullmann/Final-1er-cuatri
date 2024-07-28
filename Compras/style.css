@@ -66,47 +66,40 @@ section>div>img {
     
 }
 
-.botones {
+.info {
     display: flex;
     height: auto;
     display:inline;
 }
 input {
-    width: 40px;
-    text-align: center;
+    width: 35px;
+    text-align: end;
 }
 
 p {
     font-size: 10px;
 }
 
-.resultado {
-    width: 100px;
-    height: 40px;
-    font-size: 40px;
-}
-
 footer>div>p {
     font-size: 40px;
 }
+
+.botonIgual {
+    border-radius: 30%;
+    width: 20%;
+    margin-top: 3vw;
+    display:inline-block;
+    height: 40px;
+}
+
 h3 {
-    text-align: start;
+    text-align: center;
     color: black;
-}
-
-.mediodepago {
-    height: 25px;
-    width: 30px;
-    background-color:rgb(255, 252, 252);
-    border-radius: 50%;
-    
-}
-
-ul {
-    text-align: start;
-
+    font-size: 30px;
 }
 
 ul>p {
     font-size: 20px;
+    display: flex;
+    justify-content: start;
 }
