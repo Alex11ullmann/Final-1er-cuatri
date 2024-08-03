@@ -24,12 +24,12 @@
         </header>
         <section>
             <div class="datos">
-                <label>Nombre y Apellido: <input type="text" class="nombre" placeholder="min. 8 caracteres"></label>
+                <label>Nombre y Apellido: <input type="text" class="nombre" placeholder="min. 8 caracteres" oninput="validarLetras(event)"></label>
                 <label>Correo Electronico: <input type="email" class="correo" placeholder="Ej: name@gmail.com"></label>
-                <label>Telefono: <input type="tel" class="telefono" placeholder="Ej: 15246658" onkeypress="return validarTecla(event)"></label>
+                <label>Telefono: <input type="tel" class="telefono" placeholder="Ej: 2284246658" onkeypress="return validarTecla(event)"></label>
             </div>
             <p>Mensaje: </p>
-            <textarea name="texto" id="mensaje" class="ventanamensaje" placeholder="Escriba aqui, minimo 15 caracteres"></textarea>
+            <textarea name="texto" id="mensaje" class="ventanamensaje" placeholder="Escriba aqui, minimo 10 caracteres"></textarea>
         </section>
         <div class="boton">
             <button type="button" class="boton" >Enviar</button>
