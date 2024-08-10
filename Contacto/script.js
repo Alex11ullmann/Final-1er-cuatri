@@ -18,8 +18,8 @@ function guardardatos() {
         else if (telefono.value < 2284000000 || telefono.value > 2284999999) {
             alert ("El numero de telefono es incorrecto");
         }
-        if (correo.value.length < 11 || correo.value.length > 25) {
-            alert ("El nombre y apellido deben tener mas de 7 caracteres");
+        else if (correo.value.length < 11 || correo.value.length > 25) {
+            alert ("El correo debe tener mas de 10 caracteres");
         }
         else if (mensaje.value.length < 10) {
             alert ("El mensaje debe contener como minimo 15 caracteres");

@@ -16,7 +16,7 @@ function creartarjetagrande() {
             <img src="${urlImagenes[i]}" alt="${textoAlter[i]}"> 
                 <div class="info">
                     <p>${productos[i]}</p>
-                    <input type="number" class="cantAComprar" value="0" min="0" max="${stock[i]}" onkeypress="return validarTecla(event)">
+                    <input type="number" class="cantAComprar" min="0" max="${stock[i]}" >
                     <p>${precios[i]}</p>
                     <p>Stock disponible</p>
                     <p>${stock[i]}</p>
@@ -24,6 +24,8 @@ function creartarjetagrande() {
             </div>`;
     }
 }
+// onkeypress="return validarTecla(event)"
+
 
 creartarjetagrande();
 
@@ -34,6 +36,24 @@ let totalAPagar = document.querySelector(".totalAPagar");
 let efectivo = document.querySelector (".efectivo");
 let tarjeta = document.querySelector (".tarjeta");
 let app = document.querySelector (".app");
+
+
+
+
+cantAComprar.forEach(cantidad => {
+    cantidad.addEventListener("keyup", (e)=>{
+        e.preventDefault ();
+        let stocklocal = cantidad.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
+        if (cantidad.value === " " || cantidad.value < 0 || cantidad.value > stocklocal) {
+            alert (`El valor debe estar entre 0 y ${stocklocal}.`);
+            cantidad.value = "";
+        }
+    })
+});
+
+
+
+
 
 botonigual.addEventListener ("click", (e)=>{
     let stockRestante = 0; 
@@ -83,7 +103,7 @@ function descuentoApp (){
 }
 
 
-// funcion de Chatgpt para solo ingresar numeros
+/*/ funcion de Chatgpt para solo ingresar numeros
 
 function validarTecla(evt) {
     const code = evt.which || evt.keyCode;
@@ -97,4 +117,4 @@ function validarTecla(evt) {
         // Otras teclas
         return false;
     }
-}
+}*/
